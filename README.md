@@ -22,17 +22,8 @@ Files are denoted with suffix `_trk` to differentiate between other files.
 ## Plotting and analysis of data
 **Notes: some input file names may have prefixes or suffixes (eg. `large`, `Layer0`). This is to differentiate between different versions of root files being run. File names/directories (input and output) may need to be changed in each file. Pass names can be different for each type of file.**
 Run files with command `root -l -b -q '{fileName}.C+({input1}, {input2}, ..., {inputn})'`
-### Main files
 * `cumulativeAllProcesses.C` plots cumulative histogram of signal, inclusive and ecal PN files for an input electron multiplicity, and outputs a `.tex` file of energy thresholds, signal rates and errors.
 * `poissonReweighting.C` For input process (ecal PN/inclusive) and variance, will reweight track distributions according to the Poisson distribution and multiplicity. Track histograms from file multiplicities 1-4e are compiled in output file `{process}_allruns_{variance}poisson.root`.
 * `poissonReweightingSignal.C` same as above but for signal files only and additional input mass point.
 * `cumulativeTracks.C` plots cumulative Poisson reweighted histograms for an input track number and variance.
 * `cumulativeTracksSignal.C` same as above but for signal files only and additional input mass point.
-### Other files
-#### Simulated electron number
-* `allProcesses.C` plots log, unit area and normal histograms of inclusive, ecal PN and signal files of an input electron multiplicity
-* `allProcessTracks.C` plots log and normal histograms of the number of events in each track of inclusive, ecal PN and signal files of an input electron multiplicity
-
-#### Tracks
-* `allProcessTracks.C`
-* `cumulativeTracksPerMult.C` unweighted (without Poisson)
