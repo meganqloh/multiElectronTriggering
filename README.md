@@ -1,4 +1,10 @@
 # How to run
+## Input directories (used in study)
+- Inclusive: `/nfs/slac/g/ldmx/data/validation/v12/4gev_{n}e_inclusive/pro_edge/`
+- Signal: `/nfs/slac/g/ldmx/data/validation/v12/4gev_{n}e_signal/pro_edge/Ap{mass}GeV/`
+- Ecal PN: `/nfs/slac/g/ldmx/data/validation/v12/4gev_{n}e_ecalPN/pro_edge/`
+
+Where `{n}` is the electron multiplicity $1, 2, 3, 4$ and `{mass}` is the mass point of signal $0.001, 0.01, 0.1, 1$.
 ## Creating root files
 #### Simulated electron number
 1) `triggerSums.py` takes pre-processed root file inputs and uses Trigger Scintillator package functions to add the trigger sums for layers $0-20, 0-22, 0-24, ..., 0-34$.
