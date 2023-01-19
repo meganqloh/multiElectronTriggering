@@ -12,6 +12,7 @@ Where `{n}` is the electron multiplicity $1, 2, 3, 4$ and `{mass}` is the mass p
     * `bsub_signal.sh` used for signal files due to extra mass point parameter.
 2) `drawFromTree.C` extracts the trigger sum data calculated previously from the variable `fArray` in the root files.
     * Run batch files using `runthroughlist.sh`, configure input and output directories in bash file.
+    * `runthroughlist.sh` takes `.txt` list inputs with the naming convention `list_{process}{n}e.txt`.
     * `runthroughlistsignal.sh` for signal files as above.
     * Outputs files in a folder with file name `{descriptor}_run{#}.root`
 3) Use `hadd` to merge ROOT histogram files into one file: `hadd {descriptor}_allruns.root {descriptor}_run*.root`
